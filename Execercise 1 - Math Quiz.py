@@ -74,7 +74,7 @@ def Problem():
         num1, num2 = num2, num1
 
     question = f"{num1} {operation_type} {num2} = "
-    return question, eval(question[:-2])  # Evaluate question to get the answer
+    return question, eval(question[:-2]) 
 
 def submitAnswer():
     # Check answer with the first attempt
@@ -85,7 +85,6 @@ def retryAnswer():
     checkAnswer(2)
 
 def checkAnswer(attempt):
-    """Check if the submitted answer is correct and update the score."""
     global score
     try:
         user_input = int(user_answer.get())
